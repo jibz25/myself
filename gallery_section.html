@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    /* General page styling */
+    body {
+      margin: 0;
+      font-family: Times new roman, sans-serif;
+      background-color:  #f9eaea; /* Soft pink background */
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+	
+	.button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #e91e63, #f06292);
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(90deg, #f06292, #e91e63);
+        }
+
+
+    /* White box styling */
+    .white-box {
+      background-color: #fff;
+      width: 80%;
+      max-width: 1000px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .white-box h1 {
+      font-size: 36px;
+      color: #ff1493; /* Pure pink for heading */
+      margin: 10px 0 20px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 100%;
+    }
+
+    /* Card Styling */
+    .card {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .card:hover {
+      transform: rotate(-5deg) scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .card:hover .card__content {
+      transform: translate(-50%, -50%) rotate(0deg);
+      opacity: 1;
+    }
+
+    .card__title {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .card__description {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #777;
+      line-height: 1.4;
+    }
+
+
+.card:hover img {
+      filter: blur(2px);
+      scale: 1.1;
+    }
+  </style>
+</head>
+<body>
+	
+	<!-- Back button -->
+	<a href="homepage.html" class="button">Back</a>
+ 
+ <div class="white-box">
+    <h1>Gallery</h1>
+    <div class="gallery">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="TRIP1.jpg" />
+        <div class="card__content">
+          <p class="card__title">Night View</p>
+          <p class="card__description">Enjoying the stunning vista of Kuala Lumpur's vibrant city lights and the lit Petronas Towers at night.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="TRIP2.jpg" />
+        <div class="card__content">
+          <p class="card__title">Petronas Towers</p>
+          <p class="card__description">My favorite building is the Petronas Towers, It represent innovation, beauty, and the heartbeat of Kuala Lumpur—a view I could admire indefinitely.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="TRIP3.jpg" />
+        <div class="card__content">
+          <p class="card__title">My self</p>
+          <p class="card__description">A breathtaking view from my apartment at night.</p>
+        </div>
+      </div>
+    <!-- Card 4 -->
+      <div class="card">
+        <img src="REDANG1.jpg" />
+        <div class="card__content">
+          <p class="card__title">Redang Trip</p>
+          <p class="card__description">The best island trip ever!</p>
+        </div>
+      </div>
+    <!-- Card 5 -->
+      <div class="card">
+        <img src="REDANG3.jpg" />
+        <div class="card__content">
+          <p class="card__title">Sunrise</p>
+          <p class="card__description">The peaceful sunrise in redang that I enjoy.</p>
+        </div>
+      </div>
+    <!-- Card 6 -->
+      <div class="card">
+        <img src="REDANG2.jpg" />
+        <div class="card__content">
+          <p class="card__title">Snorkling</p>
+          <p class="card__description">This is the last island that we stop while snorkling.</p>
+        </div>
+      </div>
+    <!-- Card 7 -->
+      <div class="card">
+        <img src="hiking.jpg" />
+        <div class="card__content">
+          <p class="card__title">Hiking</p>
+          <p class="card__description">One of my favorite activity to enjoy the fresh air and clear my mind.</p>
+        </div>
+      </div>
+    <!-- Card 8 -->
+      <div class="card">
+        <img src="friends.jpg" />
+        <div class="card__content">
+          <p class="card__title">My lovely friends</p>
+          <p class="card__description">I love them so much.</p>
+        </div>
+      </div>
+    <!-- Card 9 -->
+      <div class="card">
+        <img src="badminton.jpg" />
+        <div class="card__content">
+          <p class="card__title">Hobby</p>
+          <p class="card__description">I play badminton every week to release stress.</p>
+        </div>
+      </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+</body>
+</html>

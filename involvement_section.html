@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Involvement</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Times new roman, sans-serif;
+            background-color: #f9eaea; /* Soft pink background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+		
+		.button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #e91e63, #f06292);
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(90deg, #f06292, #e91e63);
+        }
+
+        .container {
+            background-color: white;
+            width: 70%;
+            max-width: 900px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+			
+        }
+        .container h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #020001;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+        .line {
+            width: 80%;
+            height: 2px;
+            background-color: #e84d7a;
+            margin: 10px auto 20px;
+        }
+        .organization {
+            margin: 40px 0 10px; /* Add spacing between organizations */
+            font-size: 20px;
+            font-weight: bold;
+            color: #020001;
+        }
+        .details {
+            font-size: 16px;
+            line-height: 1.8; /* Adjust line spacing */
+            color: #020001;
+            text-align: left;
+            margin-left: 8%;
+        }
+        .details p {
+            display: flex;
+            align-items: flex-start;
+        }
+        .details p::before {
+            content: '•'; /* Add a dot as a bullet point */
+            color: #e84d7a;
+            font-weight: bold;
+            margin-right: 12px;
+            line-height: 2;
+        }
+        .details span {
+            font-weight: bold;
+            color: #020001;
+        }
+    </style>
+</head>
+<body>
+	<!-- Back button -->
+	<a href="homepage.html" class="button">Back</a>
+	
+   <div class="container">
+        <h1>Involvement</h1>
+        <div class="line"></div>
+        
+        <!-- First Involvement -->
+        <div class="organization">Academic Club of Information Management</div>
+        <div class="details">
+            <p><span> Month and Year: </span> &nbsp; March 2024 - August 2024 </p>
+            <p><span> Position: </span> &nbsp; Majlis Tertinggi (Naib Bendahari)</p>
+            <p><span> Summary: </span> &nbsp; Manage a money for all the programs under the and manage a budget for creating a project. </p>
+        </div>
+
+        <!-- Second Involvement -->
+        <div class="organization">Academic Club of Information Management</div>
+        <div class="details">
+            <p><span>Month and Year:</span>&nbsp;October 2023 - January 2024 </p>
+            <p><span>Position:</span>&nbsp; Exco Akademik </p>
+            <p><span>Summary:</span>&nbsp; Responsible for updating distributing information regarding academic affairs to all faculty students. </p>
+        </div>
+    </div>
+</body>
+</html>
